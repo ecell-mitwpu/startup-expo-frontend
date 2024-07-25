@@ -492,7 +492,6 @@ nav {
   width: 500px;
   height: 300px;
   content: "";
-  background-image: linear-gradient(70deg, #dc422a, blue);
   position: absolute;
   z-index: -1;
   border-radius: 20% 30% 80% 10%;
@@ -509,7 +508,7 @@ nav {
 /*--------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------- Offer Section ----------------------------------------------------*/
 #featured {
-  padding: 2vw 12vw;
+  padding: 2vh 12vw;
 }
 .fheading > h1 {
   line-height: 1;
@@ -526,14 +525,14 @@ nav {
 }
 #fleft {
   overflow: hidden;
-  width: 35%;
+  width: 40%;
   height: inherit;
 }
 .fleft-elem {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 3vw 0;
+  padding: 1.5vh 0;
   height: inherit;
 }
 .fleft-elem h1 {
@@ -541,7 +540,7 @@ nav {
   font-size: 2vw;
   font-weight: 600;
   text-transform: capitalize;
-  margin: 1.5vw 0;
+  margin: 2vh 0;
 }
 .fleft-elem h1 span {
   color: #0077b6;
@@ -568,22 +567,21 @@ nav {
 }
 #fright {
   width: 50%;
-  height: inherit;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-top: 6vh;
 }
 #fright .images {
   width: 100%;
-  height: 90%;
+  height: 100%;
   overflow: hidden;
-  margin-top: 2vw;
 }
 
 #fright .images img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------- Previous Speakers ----------------------------------------------------*/
@@ -738,7 +736,7 @@ nav {
 .FAQ {
   width: 100%;
   min-height: 100vh;
-  padding: 3vh 8.6vw; 
+  padding: 1vh 8.6vw; 
 }
 
 .FAQ > div:not(:last-child) {
@@ -1058,7 +1056,6 @@ footer > p {
   .navbar a {
     font-size: 0.9rem;
     margin: 0 10px;
-
   }
   .nav-right a {
     font-size: 0.9rem;
@@ -1071,15 +1068,6 @@ footer > p {
   }
   .carousel.showDetail .list .item:nth-child(2) .detail .title {
     font-size: 2em;
-  }
-  /* #fright .images {
-    width: 90%;
-    height: 90%;
-    overflow: hidden;
-  } */
-
-  .firstElem {
-    margin-top: 2vw;
   }
   #videoSection {
     height: 60vh;
@@ -1110,6 +1098,7 @@ footer > p {
       justify-content: center;
       align-items: center;
       transition: all .55s ease;
+      transform: translateY(-10vh);
     }
     .navbar a{
       display: block;
@@ -1135,7 +1124,7 @@ footer > p {
     margin-bottom: 10px;
   }
   .carousel {
-    height: 400px;
+    height: 500px;
   }
   .carousel .list .item {
     width: 100%;
@@ -1166,10 +1155,13 @@ footer > p {
     width: max-content;
     float: right;
   }
-  /* #fright .images {
-    height: 60%;
-  } */
-  .firstElem {
-    margin-top: 13vw;
+  #fImages{
+    flex-direction: column;
+  }
+  #fright,#fleft {
+    width: 100%;
+  }
+  summary h1 {
+    font-size: 15px;
   }
 }

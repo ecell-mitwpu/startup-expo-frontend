@@ -8,7 +8,9 @@
     <link rel="icon" href="./img/ECELL-LOGO.png" type="image/png">
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -16,55 +18,28 @@
 <body>
     <!----------------------------------------- Navigation Bar ---------------------------------------------------->
     <nav>
-        <div class="logo">
-            <img src="./img/ECELL-LOGO.png" alt="" style="width: 70px; height: 60px;">
-            <p>StartupExpo 2024</p>
-        </div>
-        <label for="btn" class="icon">
-            <i class="bi bi-list"></i>
-        </label>
-        <input type="checkbox" id="btn">
-        <ul>
+        <a href="#" class="logo">
+            <img src="./img/ECELL-LOGO.png" alt=""><span>StartupExpo</span>
+        </a>
+        <ul class="navbar">
             <li><a href="">Home</a></li>
-            <li>
-                <label for="btn-2" class="show">ABOUT</label>
-                <a href="">About</a>
-                <input type="checkbox" id="btn-2">
-                <ul>
-                    <li><a href="">Highlights</a></li>
-                    <li>
-                        <label for="btn-3" class="show det">DETAILS</label>
-                        <a href="">Details</a>
-                        <input type="checkbox" id="btn-3">
-                        <ul>
-                            <li><a href="">Students</a></li>
-                            <li><a href="">Startups</a></li>
-                            <li><a href="">VC'S</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </li>
-            <li><a href="">Gallery</a></li>
-            <li>
-                <label for="btn-1" class="show">PREVIOUS</label>
-                <a href="">Previous</a>
-                <input type="checkbox" id="btn-1">
-                <ul>
-                    <li><a href="">Speakers</a></li>
-                    <li><a href="">Partners</a></li>
-                </ul>
-            </li>
-            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Expo-24</a></li>
+            <li><a href="">Previous</a></li>
+            <li><a href="">FAQ</a></li>
         </ul>
+        <div class="nav-right">
+            <a href="" class="user"> <i class="ri-contacts-book-2-fill"></i>Contact</a>
+            <div class="bx bx-menu" id="menu-icon">
+            </div>
+        </div>
     </nav>
     <!------------------------------------------------------------------------------------------------------------->
     <!----------------------------------------- Header Section ----------------------------------------------------->
     <section class="heroSection">
         <img src="./img/heroBg.png" id="heroBg">
         <h2 id="heroText">Startup Expo</h2>
-        <img src="./img/heroMan.png" id="man" style="z-index: 1000;">
-        <img src="./img/leftCurtain.png" id="leftCurtain">
+        <img src="./img/temp.png" id="leftCurtain">
         <img src="./img/rightCurtain.png" id="rightCurtain">
     </section>
     <!-------------------------------------------------------------------------------------------------------------------------------->
@@ -72,7 +47,7 @@
     <div class="carousel">
         <div class="list">
             <div class="item">
-                <img src="./img/panelDiscussion.png" class="sliderAnim">
+                <img src="./img/panelDiscussion.png">
                 <div class="introduce">
                     <div class="title">PANEL</div>
                     <div class="topic">Discussions</div>
@@ -84,7 +59,10 @@
                 <div class="detail">
                     <div class="title">Panel Discussions</div>
                     <div class="des">
-                        Engage in discussions with professionals and entrepreneurs from diverse sectors, exploring industry trends, innovations, and challenges.These panel discussions will cover a range of topics which will difinitely help you Gain insights and interact with experts during these informative sessions.
+                        Engage in discussions with professionals and entrepreneurs from diverse sectors, exploring
+                        industry trends, innovations, and challenges.These panel discussions will cover a range of
+                        topics which will difinitely help you Gain insights and interact with experts during these
+                        informative sessions.
                     </div>
                 </div>
             </div>
@@ -102,7 +80,10 @@
                 <div class="detail">
                     <div class="title">Startup Showcases</div>
                     <div class="des">
-                        Discover daily exhibitions of cutting-edge products and solutions from participating startups. This is your chance to see the future of various industries firsthand, as startups present their cutting-edge technologies and creative ideas. Engage with the founders, ask questions, and discover new products and services that could revolutionize the market
+                        Discover daily exhibitions of cutting-edge products and solutions from participating startups.
+                        This is your chance to see the future of various industries firsthand, as startups present their
+                        cutting-edge technologies and creative ideas. Engage with the founders, ask questions, and
+                        discover new products and services that could revolutionize the market
                     </div>
                 </div>
             </div>
@@ -120,7 +101,10 @@
                 <div class="detail">
                     <div class="title">Roam around Interviews</div>
                     <div class="des">
-                        Experience spontaneous and engaging interviews with entrepreneurs and industry experts as they roam around the expo. Discover practical advice, inspirational stories, and valuable insights from successful entrepreneurs. These interviews provide a unique opportunity to learn and connect in an informal setting.
+                        Experience spontaneous and engaging interviews with entrepreneurs and industry experts as they
+                        roam around the expo. Discover practical advice, inspirational stories, and valuable insights
+                        from successful entrepreneurs. These interviews provide a unique opportunity to learn and
+                        connect in an informal setting.
                     </div>
                 </div>
             </div>
@@ -131,75 +115,94 @@
                     <div class="title">ONE MINUTE</div>
                     <div class="topic">Pitch Desks</div>
                     <div class="des">
-                        Witness startups deliver concise and impactful presentations to investors and the audience, showcasing their unique value propositions
+                        Witness startups deliver concise and impactful presentations to investors and the audience,
+                        showcasing their unique value propositions
                     </div>
                     <button class="seeMore">SEE MORE &#8599</button>
                 </div>
                 <div class="detail">
                     <div class="title">1Min Pitch Desks</div>
                     <div class="des">
-                        Experience the excitement of rapid-fire pitches as startups present their innovative ideas and solutions in just one minute. Gain a rapid overview of the latest innovations and entrepreneurial ideas. These pitches provide a snapshot of the cutting-edge solutions emerging in the market, offering inspiration and potential collaboration opportunities.
+                        Experience the excitement of rapid-fire pitches as startups present their innovative ideas and
+                        solutions in just one minute. Gain a rapid overview of the latest innovations and
+                        entrepreneurial ideas. These pitches provide a snapshot of the cutting-edge solutions emerging
+                        in the market, offering inspiration and potential collaboration opportunities.
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="./img/networkingSessions.png">
+                <img src="./img/8-KGek1CS2qKeBbbM-Photoroom.png">
                 <div class="introduce">
                     <div class="title">NETWORKING</div>
                     <div class="topic">Sessions</div>
                     <div class="des">
-                        Connect with peers, industry leaders, and potential collaborators in structured networking opportunities designed to foster meaningful connections.
+                        Connect with peers, industry leaders, and potential collaborators in structured networking
+                        opportunities designed to foster meaningful connections.
                     </div>
                     <button class="seeMore">SEE MORE &#8599</button>
                 </div>
                 <div class="detail">
                     <div class="title">Networking Sessions</div>
                     <div class="des">
-                        Connect with like-minded professionals, entrepreneurs, and industry experts during our dedicated networking sessions. These sessions provide the perfect opportunity to build valuable relationships and expand your professional network. Whether you're seeking partnerships, mentorship, or simply new connections, these sessions are designed to facilitate valuable interactions.
+                        Connect with like-minded professionals, entrepreneurs, and industry experts during our dedicated
+                        networking sessions. These sessions provide the perfect opportunity to build valuable
+                        relationships and expand your professional network. Whether you're seeking partnerships,
+                        mentorship, or simply new connections, these sessions are designed to facilitate valuable
+                        interactions.
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="./img/mentoring.png">
+                <img
+                    src="./img/imgbin-student-teacher-education-educational-technology-course-teacher-transparent-upNrubQZkGM56K6q0prBbA3rV-Photoroom.png">
                 <div class="introduce">
                     <div class="title">MENTORSHIP</div>
                     <div class="topic">Programs</div>
                     <div class="des">
-                        Engage in mentorship sessions where experienced professionals and entrepreneurs provide guidance and support to student projects and aspiring entrepreneurs
+                        Engage in mentorship sessions where experienced professionals and entrepreneurs provide guidance
+                        and support to student projects and aspiring entrepreneurs
                     </div>
                     <button class="seeMore">SEE MORE &#8599</button>
                 </div>
                 <div class="detail">
                     <div class="title">Mentorship Programs</div>
                     <div class="des">
-                        Take advantage of our mentorship programs designed to connect aspiring entrepreneurs and professionals with experienced mentors.Receive tailored advice and support from experienced mentors, helping you overcome challenges and achieve your goals. Whether you're looking for strategic guidance, industry insights, or personal growth tips, our mentorship programs provide invaluable resources for your success.
+                        Take advantage of our mentorship programs designed to connect aspiring entrepreneurs and
+                        professionals with experienced mentors.Receive tailored advice and support from experienced
+                        mentors, helping you overcome challenges and achieve your goals. Whether you're looking for
+                        strategic guidance, industry insights, or personal growth tips, our mentorship programs provide
+                        invaluable resources for your success.
                     </div>
                 </div>
             </div>
             <div class="item">
-                <img src="./img/wokrshop.png">
+                <img src="./img/workShop.png">
                 <div class="introduce">
                     <div class="title">FUN &</div>
                     <div class="topic">Workshops</div>
                     <div class="des">
-                       Join hands-on workshops to boost entrepreneurial skills and knowledge, and enjoy quizzes and games to keep the enthusiasm high.
+                        Join hands-on workshops to boost entrepreneurial skills and knowledge, and enjoy quizzes and
+                        games to keep the enthusiasm high.
                     </div>
                     <button class="seeMore">SEE MORE &#8599</button>
                 </div>
                 <div class="detail">
                     <div class="title">Fun and Workshops</div>
                     <div class="des">
-                        Dive into interactive and engaging workshops designed to enhance your entrepreneurial skills and knowledge, while enjoying quizzes and games that keep the energy high and the atmosphere lively.Enhance your skills, gain new insights, and connect with other participants in a fun and interactive setting. 
+                        Dive into interactive and engaging workshops designed to enhance your entrepreneurial skills and
+                        knowledge, while enjoying quizzes and games that keep the energy high and the atmosphere
+                        lively.Enhance your skills, gain new insights, and connect with other participants in a fun and
+                        interactive setting.
                     </div>
                 </div>
             </div>
         </div>
         <div class="arrows">
-            <button id="prev"><</button>
+            <button id="prev"></button>
             <button id="next">></button>
-            <button id="back">See All  &#8599</button>
+            <button id="back">See All &#8599</button>
         </div>
     </div>
 
@@ -214,38 +217,52 @@
                 <div class="fleft-elem firstElem">
                     <h1 class="first">For <span> Students</span></h1>
                     <div class="temp">
-                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Learn about industry trends, research advancements, and future opportunities.</h3>
-                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Connect with entrepreneurs, professionals, and investors to build your network.</h3>
-                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Explore internships for practical experience.</h3>
-                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Pitch projects and ideas for financial support.</h3>           
+                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Learn about industry trends, research
+                            advancements, and future opportunities.</h3>
+                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Connect with entrepreneurs, professionals,
+                            and investors to build your network.</h3>
+                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Explore internships for practical
+                            experience.</h3>
+                        <h3 class="first"><i class="bi bi-bookmark-star"></i> Pitch projects and ideas for financial
+                            support.</h3>
                         <h4 class="first">Design,Development,product </h4>
                     </div>
                 </div>
                 <div class="fleft-elem secElem">
                     <h1 class="sec">For <span> Startups</span></h1>
                     <div class="temp">
-                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Pitch your startup to venture capitalists and investors.</h3>
-                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Showcase your solutions to a broad audience and refine your strategies with expert feedback.</h3>
-                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Find skilled students to join your team and support your startup's growth.</h3>
-                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Test your products with potential buyers and receive constructive feedback.</h3>           
+                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Pitch your startup to venture capitalists
+                            and investors.</h3>
+                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Showcase your solutions to a broad audience
+                            and refine your strategies with expert feedback.</h3>
+                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Find skilled students to join your team and
+                            support your startup's growth.</h3>
+                        <h3 class="sec"><i class="bi bi-bookmark-star"></i> Test your products with potential buyers and
+                            receive constructive feedback.</h3>
                         <h4 class="sec">Design,Development,product </h4>
                     </div>
                 </div>
                 <div class="fleft-elem thirdElem">
                     <h1 class="third">For <span> VC's </span></h1>
                     <div class="temp">
-                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Discover New Ventures and Investment Opportunities.</h3>
-                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Discover diverse startups and invest in emerging ventures across various domains</h3>
-                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Network with experts, venture capitalists, and industrialists across multiple sectors</h3>
-                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Add high-potential startups to diversify and strengthen your investment portfolio.</h3>           
+                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Discover New Ventures and Investment
+                            Opportunities.</h3>
+                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Discover diverse startups and invest in
+                            emerging ventures across various domains</h3>
+                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Network with experts, venture capitalists,
+                            and industrialists across multiple sectors</h3>
+                        <h3 class="third"><i class="bi bi-bookmark-star"></i> Add high-potential startups to diversify
+                            and strengthen your investment portfolio.</h3>
                         <h4 class="third">Design,Development,product </h4>
                     </div>
                 </div>
                 <div class="fleft-elem last">
-                    <h1 style=" font-family: 'Edu AU VIC WA NT Hand', cursive; font-weight: 400;line-height: 1.6;" class="four">“ The biggest risk is not taking any risk… In a world that's changing really quickly, the only strategy that is likely to fail is not taking risks. ”</h1>
+                    <h1 style=" font-family: 'Edu AU VIC WA NT Hand', cursive; font-weight: 400;line-height: 1.6;"
+                        class="four">“ The biggest risk is not taking any risk… In a world that's changing really
+                        quickly, the only strategy that is likely to fail is not taking risks. ”</h1>
                     <h4 class="four">-Mark Zuckerberg, Facebook Founder </h4>
                 </div>
-                
+
             </div>
             <div id="fright">
                 <div class="images">
@@ -257,50 +274,60 @@
 
     <!------------------------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------- Previous Speakers ---------------------------------------------------->
-    <br><br>
-    <h1 style="text-align: center; font-size: 4vw;font-weight: 400;margin-bottom: 2.4vw;">Previous Speakers</h1>
-    <section class="cards">
-        <div class="card">
-            <img src="./img/james-person-1.jpg" alt="">
-            <div class="card-text">
-                <h1>Nayani Nasa</h1>
-                <h5>Hello world</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo iste, placeat possimus nostrum quidem deserunt unde debitis quam porro!</p>
+    <section id="speakerSection">
+        <h1 style="text-align: center; font-size: 2.5em;font-weight: 600;margin-bottom: 3.7vw;">Previous Speakers</h1>
+        <div class="speakerContainer">
+            <br><br>
+            <div>
+                <img src="./img/harshak sinha.jpeg" alt="Nayani_Nasa">
+                <h1>Harshak Sinha</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
+            </div>
+
+            <div>
+                <img src="./img/prashant iyer.jpeg" alt="Rakhi_Pal">
+                <h1>Prashant iyer</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
+            </div>
+
+            <div>
+                <img src="./img/ritesh varma.jpeg" alt="Rohini_Nair">
+                <h1>Ritesh varma</h1>
+                <h3>-Lorem Ipsum Dolor Sit </h3>
+            </div>
+
+            <div>
+                <img src="./img/Sachin Bhavsar.jpeg" alt="Abhijit_Mhetre">
+                <h1>Sachin Bhavsar</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
+            </div>
+
+            <div>
+                <img src="./img/Santosh Easale.jpg" alt="Vishal_Madan">
+                <h1>Santosh Easale</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
+            </div>
+
+            <div>
+                <img src="./img/shahbaz khan.jpeg" alt="Vishal_Madan">
+                <h1>Shahbaz khan</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
+            </div>
+
+            <div>
+                <img src="./img/1719401230876.jpeg" alt="Vishal_Madan">
+                <h1>Idk Idk</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
+            </div>
+
+            <div class="speakerCard">
+                <img src="./img/images.jpeg" alt="Vishal_Madan">
+                <h1>Idk Idk</h1>
+                <h3>-Lorem Ipsum Dolor Sit</h3>
             </div>
         </div>
-        <div class="card">
-            <img src="./img/james-person-1.jpg" alt="">
-            <div class="card-text">
-                <h1>Rakhi Pal</h1>
-                <h5>Hello world</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo iste, placeat possimus nostrum quidem deserunt unde debitis quam porro!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img/james-person-1.jpg" alt="">
-            <div class="card-text">
-                <h1>Abhijit Mhetre</h1>
-                <h5>Hello world</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo iste, placeat possimus nostrum quidem deserunt unde debitis quam porro!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img/james-person-1.jpg" alt="">
-            <div class="card-text">
-                <h1>Rohini Nair</h1>
-                <h5>Hello world</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo iste, placeat possimus nostrum quidem deserunt unde debitis quam porro!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img/james-person-1.jpg" alt="">
-            <div class="card-text">
-                <h1>Vishal Madan</h1>
-                <h5>Hello world</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quo iste, placeat possimus nostrum quidem deserunt unde debitis quam porro!</p>
-            </div>
-        </div>
-    </section> <br><br><br>
+        <br><br><br><br>
+    </section>
     <!------------------------------------------------------------------------------------------------------------------------>
     <!------------------------------------------------- Previous Partners ---------------------------------------------------->
     <section class="partners">
@@ -324,13 +351,167 @@
             <div id="blurright"></div>
         </div>
     </section><br><br><br>
+    <!------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------- Video ---------------------------------------------------->
+    <div id="videoSection">
+        <video src="https://lazarev.kiev.ua/la24/la-reel--min.mp4"></video>
+        <div class="videoSection-center">
+            <div class="playIcon">
+                <i class="ri-play-fill"></i>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------- Faq section ---------------------------------------------------->
+    <section class="FAQ"> <br> <br>
+        <h1>FAQ</h1>
+        <div>
+            <details open>
+                <summary>
+                    <i class="ri-arrow-down-s-line" id="show"></i>
+                    <h1>Q) What happens in the event??</h1>
+                </summary>
+
+                <div class="FAQ-answer">
+                    <div class="FAQ_hoverEffect">
+                    </div>
+                    <p>
+                        Before making any design solutions, our team conducts UX research, leaving no
+                        stone unturned. This entails market analysis, competitor assessment,
+                        crystallizing your product positioning, and defining comprehensive feature
+                        lists.
+                    </p>
+                </div>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>
+                    <i class="ri-arrow-down-s-line" id="show"></i>
+                    <h1>Q) When is the Event for this year?? </h1>
+                </summary>
+
+                <div class="FAQ-answer">
+                    <div class="FAQ_hoverEffect">
+                    </div>
+                    <p>Before making any design solutions, our team conducts UX research, leaving no
+                        stone unturned. This entails market analysis, competitor assessment,
+                        crystallizing your product positioning, and defining comprehensive feature
+                        lists.</p>
+                </div>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>
+                    <i class="ri-arrow-down-s-line" id="show"></i>
+                    <h1>Q) What do the attendees get??</h1>
+                </summary>
+
+                <div class="FAQ-answer">
+                    <div class="FAQ_hoverEffect">
+                    </div>
+                    <p>Before making any design solutions, our team conducts UX research, leaving no
+                        stone unturned. This entails market analysis, competitor assessment,
+                        crystallizing your product positioning, and defining comprehensive feature
+                        lists.</p>
+                </div>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>
+                    <i class="ri-arrow-down-s-line" id="show"></i>
+                    <h1>Q) Is there any Registration Fees??</h1>
+                </summary>
+
+                <div class="FAQ-answer">
+                    <div class="FAQ_hoverEffect">
+                    </div>
+                    <p>Before making any design solutions, our team conducts UX research, leaving no
+                        stone unturned. This entails market analysis, competitor assessment,
+                        crystallizing your product positioning, and defining comprehensive feature
+                        lists.</p>
+                </div>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>
+                    <i class="ri-arrow-down-s-line" id="show"></i>
+                    <h1>Q) Does this Event happen every year??</h1>
+                </summary>
+
+                <div class="FAQ-answer">
+                    <div class="FAQ_hoverEffect">
+                    </div>
+                    <p>Before making any design solutions, our team conducts UX research, leaving no
+                        stone unturned. This entails market analysis, competitor assessment,
+                        crystallizing your product positioning, and defining comprehensive feature
+                        lists.</p>
+                </div>
+            </details>
+        </div>
+
+        <div class="moreQuestions">
+            <h1>Have More Questions?</h1><br>
+            <p>Have a question or need assistance? We are here to help. Reach out to us via email or give us a call</p>
+
+        </div>
+
+    </section>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------- Form ---------------------------------------------------->
+    <section class="form-container">
+        <div class="form-row">
+
+            <div class="formCol leftForm">
+                <div class="contactTitle">
+                    <h2>Get In Touch</h2>
+                    <p>Feel free to reach out to us with any inquiries or collaboration opportunities regarding our
+                        cloth manufacturing services</p>
+                </div>
+            </div>
+
+            <div class="formCol rightForm">
+                <form class="messageForm">
+                    <div class="inputGroup halfWidth">
+                        <input class="input" type="text" name="" required="required">
+                        <label>Your Name</label>
+                    </div>
+
+                    <div class="inputGroup halfWidth">
+                        <input type="email" name="" required="required">
+                        <label>Email</label>
+                    </div>
+
+                    <div class="inputGroup fullWidth">
+                        <input type="text" name="" required="required">
+                        <label>Subject</label>
+                    </div>
+
+                    <div class="inputGroup fullWidth">
+                        <textarea required="required"></textarea>
+                        <label>Say Something</label>
+                    </div>
+
+                    <div class="inputGroup fullWidth">
+                        <button>Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
     <!-------------------------------------------------------------------------------------------------------------->
     <!------------------------------------------------- Footers ---------------------------------------------------->
     <footer>
         <div class="footer-upper">
             <img src="./img/ECELL-LOGO.png" alt="">
             <div class="footer-part">
-                <h3>Location<div class="underline"><span></span></div></h3>
+                <h3>Location<div class="underline"><span></span></div>
+                </h3>
                 <p>MIT World Peace University</p>
                 <p>Paud Rd, Kothrud, Pune</p>
                 <p>Maharashtra 411038</p>
@@ -338,7 +519,8 @@
                 <h4>+91 - 9637484271</h4>
             </div>
             <div class="footer-part">
-                <h3>Links<div class="underline"><span></span></div></h3>
+                <h3>Links<div class="underline"><span></span></div>
+                </h3>
                 <p><a href="">Highlights</a></p>
                 <p><a href="">For Students</a></p>
                 <p><a href="">For Startups</a></p>
@@ -346,7 +528,8 @@
                 <p><a href="">Gallery</a></p>
             </div>
             <div class="footer-part4">
-                <h3>Follow us <div class="underline"><span></span></div></h3>
+                <h3>Follow us <div class="underline"><span></span></div>
+                </h3>
                 <div class="socialMedia">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -356,12 +539,13 @@
             </div>
         </div>
         <hr>
-        <br><p>E-Cell StartupExpo © 2024 - All Rights Reserved </p><br>
+        <br>
+        <p>E-Cell StartupExpo © 2024 - All Rights Reserved </p><br>
     </footer>
     <!----------------------------------------- Scripts ---------------------------------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <script src="./app.js"></script>
 </body>
 

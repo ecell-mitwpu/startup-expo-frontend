@@ -1,3 +1,15 @@
+let menu=document.querySelector("#menu-icon");
+let navbar=document.querySelector(".navbar");
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('open');
+}
+
+Shery.mouseFollower();
+Shery.makeMagnet(".logo img",{
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+})
 
 // OnPageLoad Animation
 function page_loadAnim() {
@@ -9,7 +21,7 @@ function page_loadAnim() {
   });
 
   tl.from(
-    ".logo p",
+    ".logo span",
     {
       duration: 0.57,
       opacity: 0,
@@ -21,7 +33,7 @@ function page_loadAnim() {
   tl.from(
     "#heroText",
     {
-      duration: 0.4,
+      duration: 0.5,
       opacity: 0,
       y: 35,
     },
@@ -34,12 +46,6 @@ page_loadAnim();
 function heroAnimation() {
   gsap.to("#heroBg", {
     scale: 2.3,
-    scrollTrigger: {
-      scrub: 2,
-    },
-  });
-  gsap.to("#man", {
-    scale: 0.3,
     scrollTrigger: {
       scrub: 2,
     },
@@ -65,14 +71,6 @@ function heroAnimation() {
   });
 }
 heroAnimation();
-
-Shery.mouseFollower()
-Shery.makeMagnet(".logo img",{
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-})
-Shery.hoverWithMediaCircle("#heroText", {
-  images: ["./img/textImg.jpg"]
-});
 
 // Slider
 function threedslider() {
@@ -118,19 +116,6 @@ function threedslider() {
   backButton.onclick = function(){
       carousel.classList.remove('showDetail');
   }
-  gsap.from('.sliderAnim',{
-    duration: 1,
-    opacity:0,
-    stagger:0.4,
-    y:100,
-    scrollTrigger:{
-    trigger:'.item',
-    scroller: 'body',
-    start:'top 20%',
-    end:'top -100%',
-    scrub:2,
-    }
-    })
 }
 threedslider();
 
@@ -207,3 +192,56 @@ function offerAnim() {
 }
 
 offerAnim();
+
+function speakerPartnerSection(){
+  gsap.from("#speakerSection", {
+    y: 50,
+    opacity:0,
+    stagger:0.7,
+    scrollTrigger:{
+    trigger:'#speakerSection',
+    scroller: 'body',
+    start:'top 65%',
+    end:'top -5%',
+    scrub:3,
+    }
+  });
+  gsap.from(".partners", {
+    y: 50,
+    opacity:0,
+    stagger:0.65,
+    scrollTrigger:{
+    trigger:'.partners',
+    scroller: 'body',
+    start:'top 95%',
+    end:'top -1%',
+    scrub:3,
+    }
+  });
+}
+speakerPartnerSection();
+
+function VideoAnimation() {
+var videoPlayBtn=document.querySelector(".videoSection-center")
+var video=document.querySelector("#videoSection video")
+
+videoPlayBtn.addEventListener("click",function () {
+  video.play()
+  gsap.to(video,{
+      transform:"scaleX(1) scaleY(1)",
+      opacity:1,
+      borderRadius:0
+  })
+})
+
+video.addEventListener("click",function () {
+  video.pause()
+  gsap.to(video,{
+      transform:"scaleX(0.7) scaleY(0)",
+      opacity:0,
+      borderRadius:"30px"
+  })
+})
+}
+VideoAnimation();
+
